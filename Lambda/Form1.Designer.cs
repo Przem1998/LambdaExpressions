@@ -43,11 +43,15 @@
             this.label7 = new System.Windows.Forms.Label();
             this.s1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.x = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.resultArray = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.n_ = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.stringSign = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.ascending = new System.Windows.Forms.RadioButton();
+            this.descending = new System.Windows.Forms.RadioButton();
+            this.l_numbers = new System.Windows.Forms.Label();
+            this.priority = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -177,59 +181,104 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label8
+            // label10
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(268, 52);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(38, 13);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "x^i_10";
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(252, 15);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(117, 13);
+            this.label10.TabIndex = 25;
+            this.label10.Text = "wielkosc ciągu znaków";
             // 
-            // x
+            // n_
             // 
-            this.x.Location = new System.Drawing.Point(312, 50);
-            this.x.Name = "x";
-            this.x.Size = new System.Drawing.Size(37, 20);
-            this.x.TabIndex = 18;
+            this.n_.Location = new System.Drawing.Point(375, 12);
+            this.n_.Name = "n_";
+            this.n_.Size = new System.Drawing.Size(37, 20);
+            this.n_.TabIndex = 24;
             // 
-            // button3
+            // button4
             // 
-            this.button3.Location = new System.Drawing.Point(355, 47);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 17;
-            this.button3.Text = "Sprawdź";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button4.Location = new System.Drawing.Point(294, 42);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 23;
+            this.button4.Text = "Wypisz";
+            this.button4.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // stringSign
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(268, 85);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 13);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Tablica 10-elementowa";
+            this.stringSign.AutoSize = true;
+            this.stringSign.Location = new System.Drawing.Point(252, 78);
+            this.stringSign.Name = "stringSign";
+            this.stringSign.Size = new System.Drawing.Size(0, 13);
+            this.stringSign.TabIndex = 22;
             // 
-            // resultArray
+            // button5
             // 
-            this.resultArray.AutoSize = true;
-            this.resultArray.Location = new System.Drawing.Point(416, 85);
-            this.resultArray.Name = "resultArray";
-            this.resultArray.Size = new System.Drawing.Size(0, 13);
-            this.resultArray.TabIndex = 21;
+            this.button5.Location = new System.Drawing.Point(255, 145);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 26;
+            this.button5.Text = "Sortuj";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // ascending
+            // 
+            this.ascending.AutoSize = true;
+            this.ascending.Checked = true;
+            this.ascending.Location = new System.Drawing.Point(336, 148);
+            this.ascending.Name = "ascending";
+            this.ascending.Size = new System.Drawing.Size(68, 17);
+            this.ascending.TabIndex = 27;
+            this.ascending.TabStop = true;
+            this.ascending.Text = "Rosnąco";
+            this.ascending.UseVisualStyleBackColor = true;
+            // 
+            // descending
+            // 
+            this.descending.AutoSize = true;
+            this.descending.Location = new System.Drawing.Point(410, 148);
+            this.descending.Name = "descending";
+            this.descending.Size = new System.Drawing.Size(68, 17);
+            this.descending.TabIndex = 28;
+            this.descending.TabStop = true;
+            this.descending.Text = "Malejąco";
+            this.descending.UseVisualStyleBackColor = true;
+            // 
+            // l_numbers
+            // 
+            this.l_numbers.AutoSize = true;
+            this.l_numbers.Location = new System.Drawing.Point(258, 118);
+            this.l_numbers.Name = "l_numbers";
+            this.l_numbers.Size = new System.Drawing.Size(0, 13);
+            this.l_numbers.TabIndex = 29;
+            // 
+            // priority
+            // 
+            this.priority.AutoSize = true;
+            this.priority.Location = new System.Drawing.Point(336, 171);
+            this.priority.Name = "priority";
+            this.priority.Size = new System.Drawing.Size(153, 17);
+            this.priority.TabIndex = 30;
+            this.priority.Text = "Priorytet (najpierw rosnąco)";
+            this.priority.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.resultArray);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.x);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.priority);
+            this.Controls.Add(this.l_numbers);
+            this.Controls.Add(this.descending);
+            this.Controls.Add(this.ascending);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.n_);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.stringSign);
             this.Controls.Add(this.resultString);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
@@ -269,11 +318,15 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox s1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox x;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label resultArray;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox n_;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label stringSign;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.RadioButton ascending;
+        private System.Windows.Forms.RadioButton descending;
+        private System.Windows.Forms.Label l_numbers;
+        private System.Windows.Forms.CheckBox priority;
     }
 }
 
